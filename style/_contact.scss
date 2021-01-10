@@ -6,8 +6,20 @@
     left: 20rem;
     z-index: 12;
 
+    @media#{$tablet} {
+        width: 70%;
+        position: static;
+        margin: 0 auto;
+    }
+
+    @media#{$phone} {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
     h2 {
-        font-size: 7rem;
+        font-size: $h2;
 
         span {
             color: orange;
@@ -27,7 +39,11 @@
             background-color: orange;
             display: flex;
             flex-direction: column;
-            padding: 8rem 5rem;
+            padding: 8rem 10%;
+
+            @media#{$tablet} {
+                width: 100%;
+            }
 
             input,
             textarea {
@@ -67,6 +83,10 @@
         height: 40rem;
         position: static !important;
         margin-top: 25rem;
+
+        @media#{$tablet} {
+            margin-top: 5rem;
+        }
     }
 }
 
@@ -75,14 +95,32 @@ footer {
     padding: 0 15rem;
     display: flex;
     justify-content: space-between;
+
+    @media#{$small-tablet} {
+
+        justify-content: center;
+    }
+
     height: 7rem;
     align-items: center;
     background-color: orange;
+
+    @media#{$tablet} {
+        padding: 0 5rem;
+        margin: 0;
+    }
+
+
 
     .socials {
         display: flex;
         justify-items: center;
 
+
+        @media#{$small-tablet} {
+            display: none;
+            text-align: center;
+        }
 
         li {
 

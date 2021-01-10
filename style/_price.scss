@@ -1,9 +1,13 @@
 .prices {
     h2 {
-        font-size: 8rem;
+        font-size: $h2;
         text-align: center;
         position: relative;
         top: -15rem;
+
+        @media#{$tablet} {
+            position: static;
+        }
 
         span {
             color: orange;
@@ -19,25 +23,43 @@
         justify-content: center;
         padding: 8rem 0;
 
+        @media#{$tablet} {
+            flex-direction: column;
+            content-align: center;
+        }
+
+        @media#{$phone} {
+            width: 90%;
+
+        }
 
         .card {
             width: 33.33333%;
             text-align: center;
             border-left: 1px solid white;
 
+
+
             &:first-child {
                 border: none;
             }
 
+            @media#{$tablet} {
+                width: 100%;
+                border: none;
+                border-top: 1px solid white;
+                padding-bottom: 4rem;
+            }
+
             h3 {
-                font-size: 2.5rem;
+                font-size: $h3;
                 margin-bottom: 6rem;
                 font-weight: 300;
             }
 
             span,
             p {
-                font-size: 7em;
+                font-size: 7rem;
                 font-weight: 900;
                 color: white;
             }

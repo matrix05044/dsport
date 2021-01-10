@@ -2,17 +2,35 @@
 
 .categories {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
     top: -50px;
-    width: 60%;
+    padding: 0 10%;
+    font-size: 1.9rem;
+
+    @media#{$wide} {
+        padding: 5rem 5% 0;
+        font-size: 1.5rem;
+    }
+
+    @media#{$small-tablet} {
+        flex-wrap: wrap;
+    }
 
     .category {
-        min-width: 20rem;
-        max-width: 100%;
+        width: 100%;
         height: 9rem;
-        font-size: 1.9rem;
+
+        @media#{$small-tablet} {
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+
+        @media#{$phone} {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
         background-color: black;
         color: white;
         display: flex;
@@ -36,20 +54,56 @@ main {
     display: flex;
     margin-top: 3rem;
 
+    img {
+        @media#{$wide} {
+            width: 50%;
+
+        }
+
+        @media#{$tablet} {
+            display: none;
+
+        }
+    }
+
     .about {
         background: url("../../images/img.png") no-repeat right;
+
+        @media#{$wide} {
+            background: transparent;
+
+
+        }
 
         .section-about {
             text-align: right;
             padding-top: 29rem;
             padding-right: 30rem;
 
-            h2 {
-                font-size: 5.2rem;
+            @media#{$wide} {
+
+                padding: 0rem 5% 5rem;
+                text-align: center;
+            }
+
+            @media#{$tablet} {
+                background: transparent;
+                padding: 0rem 5% 5rem;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: $h3;
                 color: white;
+
+                @media#{$wide} {
+                    color: black;
+                }
 
                 span {
                     color: orange;
+
+
                 }
             }
 

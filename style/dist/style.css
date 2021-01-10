@@ -229,11 +229,20 @@ html body .wrapper .container {
   background-size: cover;
   min-height: 80vh;
   width: 100%;
+  margin: 0 auto;
 }
 html body .wrapper .container header {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem 10%;
+}
+@media(max-width: 1624px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
 }
 html body .wrapper .container header nav {
   display: flex;
@@ -242,20 +251,41 @@ html body .wrapper .container header nav {
   border-bottom: 1px solid orange;
   padding: 0 1rem 2rem;
 }
+@media(max-width: 768px) {
+  html body .wrapper .container header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 html body .wrapper .container header nav ul {
   list-style-type: none;
+  padding: 0;
 }
 html body .wrapper .container header nav .logo {
   width: 25rem;
   height: 5.5rem;
 }
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .logo {
+    height: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+}
 html body .wrapper .container header nav .logo img {
-  min-width: 100%;
+  width: 100%;
   height: 100%;
 }
 html body .wrapper .container header nav .socials {
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
+  width: 33.33333%;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .socials {
+    width: 50%;
+    justify-content: space-between;
+  }
 }
 html body .wrapper .container header nav .socials li {
   width: 4rem;
@@ -265,24 +295,28 @@ html body .wrapper .container header nav .socials li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 4rem;
   transition: background-color 0.5s, border 0.5s;
 }
 html body .wrapper .container header nav .socials li a {
   font-size: 1.5rem;
 }
-html body .wrapper .container header nav .socials li a:link {
+html body .wrapper .container header nav .socials li i {
   color: black;
 }
 html body .wrapper .container header nav .socials li:hover {
   background-color: orange;
   border: 1px solid orange;
 }
-html body .wrapper .container header nav .socials li:hover > a:link {
+html body .wrapper .container header nav .socials li:hover > a > i {
   color: white;
 }
 html body .wrapper .container header nav .search {
   display: flex;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .search {
+    padding: 0 20%;
+  }
 }
 html body .wrapper .container header nav .search li {
   margin-right: 4rem;
@@ -291,15 +325,25 @@ html body .wrapper .container header .section-header {
   padding: 5rem 2rem;
 }
 html body .wrapper .container header .section-header h1 {
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 300;
   margin-bottom: 0px;
 }
+@media(max-width: 1624px) {
+  html body .wrapper .container header .section-header h1 {
+    font-size: 5rem;
+  }
+}
 html body .wrapper .container header .section-header h1 .dsport {
-  font-size: 22rem;
+  font-size: 20rem;
   font-weight: 900;
   line-height: 0.8;
   display: inline-block;
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header .section-header h1 .dsport {
+    font-size: inherit;
+  }
 }
 html body .wrapper .container header .section-header h1 .dsport::first-letter {
   color: orange;
@@ -314,6 +358,7 @@ html body .wrapper .container header .section-header .readMore {
   height: 6rem;
   font-size: 2rem;
   transition: color 0.2s, background-color 0.2s;
+  margin-bottom: 4rem;
 }
 html body .wrapper .container header .section-header .readMore:hover {
   color: white;
@@ -334,11 +379,20 @@ html body .wrapper .container {
   background-size: cover;
   min-height: 80vh;
   width: 100%;
+  margin: 0 auto;
 }
 html body .wrapper .container header {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem 10%;
+}
+@media(max-width: 1624px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
 }
 html body .wrapper .container header nav {
   display: flex;
@@ -347,20 +401,41 @@ html body .wrapper .container header nav {
   border-bottom: 1px solid orange;
   padding: 0 1rem 2rem;
 }
+@media(max-width: 768px) {
+  html body .wrapper .container header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 html body .wrapper .container header nav ul {
   list-style-type: none;
+  padding: 0;
 }
 html body .wrapper .container header nav .logo {
   width: 25rem;
   height: 5.5rem;
 }
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .logo {
+    height: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+}
 html body .wrapper .container header nav .logo img {
-  min-width: 100%;
+  width: 100%;
   height: 100%;
 }
 html body .wrapper .container header nav .socials {
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
+  width: 33.33333%;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .socials {
+    width: 50%;
+    justify-content: space-between;
+  }
 }
 html body .wrapper .container header nav .socials li {
   width: 4rem;
@@ -370,24 +445,28 @@ html body .wrapper .container header nav .socials li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 4rem;
   transition: background-color 0.5s, border 0.5s;
 }
 html body .wrapper .container header nav .socials li a {
   font-size: 1.5rem;
 }
-html body .wrapper .container header nav .socials li a:link {
+html body .wrapper .container header nav .socials li i {
   color: black;
 }
 html body .wrapper .container header nav .socials li:hover {
   background-color: orange;
   border: 1px solid orange;
 }
-html body .wrapper .container header nav .socials li:hover > a:link {
+html body .wrapper .container header nav .socials li:hover > a > i {
   color: white;
 }
 html body .wrapper .container header nav .search {
   display: flex;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .search {
+    padding: 0 20%;
+  }
 }
 html body .wrapper .container header nav .search li {
   margin-right: 4rem;
@@ -396,15 +475,25 @@ html body .wrapper .container header .section-header {
   padding: 5rem 2rem;
 }
 html body .wrapper .container header .section-header h1 {
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 300;
   margin-bottom: 0px;
 }
+@media(max-width: 1624px) {
+  html body .wrapper .container header .section-header h1 {
+    font-size: 5rem;
+  }
+}
 html body .wrapper .container header .section-header h1 .dsport {
-  font-size: 22rem;
+  font-size: 20rem;
   font-weight: 900;
   line-height: 0.8;
   display: inline-block;
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header .section-header h1 .dsport {
+    font-size: inherit;
+  }
 }
 html body .wrapper .container header .section-header h1 .dsport::first-letter {
   color: orange;
@@ -419,6 +508,7 @@ html body .wrapper .container header .section-header .readMore {
   height: 6rem;
   font-size: 2rem;
   transition: color 0.2s, background-color 0.2s;
+  margin-bottom: 4rem;
 }
 html body .wrapper .container header .section-header .readMore:hover {
   color: white;
@@ -430,22 +520,37 @@ html body .wrapper .container header .section-header .readMore i {
 
 .categories {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   position: relative;
   top: -50px;
-  width: 60%;
+  padding: 0 10%;
+  font-size: 1.9rem;
+}
+@media(max-width: 1624px) {
+  .categories {
+    padding: 5rem 5% 0;
+    font-size: 1.5rem;
+  }
+}
+@media(max-width: 768px) {
+  .categories {
+    flex-wrap: wrap;
+  }
 }
 .categories .category {
-  min-width: 20rem;
-  max-width: 100%;
+  width: 100%;
   height: 9rem;
-  font-size: 1.9rem;
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media(max-width: 768px) {
+  .categories .category {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
 }
 .categories .category:nth-child(even) {
   background-color: orange;
@@ -458,19 +563,52 @@ main {
   display: flex;
   margin-top: 3rem;
 }
+@media(max-width: 1624px) {
+  main img {
+    width: 50%;
+  }
+}
+@media(max-width: 1023px) {
+  main img {
+    display: none;
+  }
+}
 main .about {
   background: url("../../images/img.png") no-repeat right;
+}
+@media(max-width: 1624px) {
+  main .about {
+    background: transparent;
+  }
 }
 main .about .section-about {
   text-align: right;
   padding-top: 29rem;
   padding-right: 30rem;
 }
-main .about .section-about h2 {
-  font-size: 5.2rem;
+@media(max-width: 1624px) {
+  main .about .section-about {
+    padding: 0rem 5% 5rem;
+    text-align: center;
+  }
+}
+@media(max-width: 1023px) {
+  main .about .section-about {
+    background: transparent;
+    padding: 0rem 5% 5rem;
+    text-align: center;
+  }
+}
+main .about .section-about h3 {
+  font-size: 5rem;
   color: white;
 }
-main .about .section-about h2 span {
+@media(max-width: 1624px) {
+  main .about .section-about h3 {
+    color: black;
+  }
+}
+main .about .section-about h3 span {
   color: orange;
 }
 main .about .section-about p {
@@ -479,10 +617,20 @@ main .about .section-about p {
 }
 
 .prices h2 {
-  font-size: 8rem;
+  font-size: 7rem;
   text-align: center;
   position: relative;
   top: -15rem;
+}
+@media(max-width: 1023px) {
+  .prices h2 {
+    position: static;
+  }
+}
+@media(max-width: 768px) {
+  .prices h2 {
+    font-size: 5rem;
+  }
 }
 .prices h2 span {
   color: orange;
@@ -495,6 +643,12 @@ main .about .section-about p {
   justify-content: center;
   padding: 8rem 0;
 }
+@media(max-width: 1023px) {
+  .prices .price-plan {
+    flex-direction: column;
+    content-align: center;
+  }
+}
 .prices .price-plan .card {
   width: 33.33333%;
   text-align: center;
@@ -502,6 +656,14 @@ main .about .section-about p {
 }
 .prices .price-plan .card:first-child {
   border: none;
+}
+@media(max-width: 1023px) {
+  .prices .price-plan .card {
+    width: 100%;
+    border: none;
+    border-top: 1px solid white;
+    padding-bottom: 4rem;
+  }
 }
 .prices .price-plan .card h3 {
   font-size: 2.5rem;
@@ -537,7 +699,7 @@ main .about .section-about p {
   text-align: center;
 }
 .gallery-section h2 {
-  font-size: 6rem;
+  font-size: 7rem;
   margin-bottom: 1rem;
 }
 .gallery-section h2 span {
@@ -594,19 +756,265 @@ main .about .section-about p {
   font-size: 1.7rem;
 }
 
-.review {
-  text-align: center;
-  width: 50%;
+html {
+  font-size: 62.5%;
+}
+html body .wrapper {
+  font-family: "Roboto", sans-serif;
+}
+html body .wrapper .container {
+  background: url("../../images/banner.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 80vh;
+  width: 100%;
   margin: 0 auto;
 }
-.review h2 {
+html body .wrapper .container header {
+  padding: 1rem 10%;
+}
+@media(max-width: 1624px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
+}
+html body .wrapper .container header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid orange;
+  padding: 0 1rem 2rem;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+html body .wrapper .container header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+html body .wrapper .container header nav .logo {
+  width: 25rem;
+  height: 5.5rem;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .logo {
+    height: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+}
+html body .wrapper .container header nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+html body .wrapper .container header nav .socials {
+  display: flex;
+  justify-content: space-between;
+  width: 33.33333%;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .socials {
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+html body .wrapper .container header nav .socials li {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s, border 0.5s;
+}
+html body .wrapper .container header nav .socials li a {
+  font-size: 1.5rem;
+}
+html body .wrapper .container header nav .socials li i {
+  color: black;
+}
+html body .wrapper .container header nav .socials li:hover {
+  background-color: orange;
+  border: 1px solid orange;
+}
+html body .wrapper .container header nav .socials li:hover > a > i {
+  color: white;
+}
+html body .wrapper .container header nav .search {
+  display: flex;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .search {
+    padding: 0 20%;
+  }
+}
+html body .wrapper .container header nav .search li {
+  margin-right: 4rem;
+}
+html body .wrapper .container header .section-header {
+  padding: 5rem 2rem;
+}
+html body .wrapper .container header .section-header h1 {
+  font-size: 10rem;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+@media(max-width: 1624px) {
+  html body .wrapper .container header .section-header h1 {
+    font-size: 5rem;
+  }
+}
+html body .wrapper .container header .section-header h1 .dsport {
+  font-size: 20rem;
+  font-weight: 900;
+  line-height: 0.8;
+  display: inline-block;
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header .section-header h1 .dsport {
+    font-size: inherit;
+  }
+}
+html body .wrapper .container header .section-header h1 .dsport::first-letter {
+  color: orange;
+}
+html body .wrapper .container header .section-header .subtitle {
+  font-size: 2.3rem;
+}
+html body .wrapper .container header .section-header .readMore {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 20rem;
+  height: 6rem;
+  font-size: 2rem;
+  transition: color 0.2s, background-color 0.2s;
+  margin-bottom: 4rem;
+}
+html body .wrapper .container header .section-header .readMore:hover {
+  color: white;
+  background-color: black;
+}
+html body .wrapper .container header .section-header .readMore i {
+  margin-left: 1rem;
+}
+
+.contact {
+  width: 70rem;
+  position: absolute;
+  left: 20rem;
+  z-index: 12;
+}
+@media(max-width: 1023px) {
+  .contact {
+    width: 70%;
+    position: static;
+    margin: 0 auto;
+  }
+}
+.contact h2 {
   font-size: 7rem;
+}
+.contact h2 span {
   color: orange;
 }
-.review h3 {
-  color: orange;
-  font-size: 1.8rem;
+.contact .form {
+  display: flex;
 }
-.review p {
-  font-size: 1.7rem;
+.contact .form form {
+  width: 70%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 5rem;
+}
+@media(max-width: 1023px) {
+  .contact .form form {
+    width: 100%;
+  }
+}
+.contact .form form input,
+.contact .form form textarea {
+  margin-bottom: 3rem;
+}
+.contact .form form > * {
+  border: none;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+}
+.contact .form form input {
+  height: 4rem;
+}
+.contact .form form textarea {
+  height: 6rem;
+}
+.contact .form form button {
+  width: 20rem;
+  height: 5rem;
+}
+
+.mapa .mapouter {
+  height: 40rem;
+  position: static !important;
+  margin-top: 25rem;
+}
+@media(max-width: 1023px) {
+  .mapa .mapouter {
+    margin-top: 5rem;
+  }
+}
+
+footer {
+  margin: 10rem 0 0;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  align-items: center;
+  background-color: orange;
+}
+@media(max-width: 1023px) {
+  footer {
+    padding: 0 5rem;
+  }
+}
+@media(max-width: 768px) {
+  footer {
+    flex-wrap: wrap;
+  }
+}
+footer .socials {
+  display: flex;
+  justify-items: center;
+}
+footer .socials li {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+  transition: background-color 0.5s, border 0.5s;
+}
+footer .socials li a {
+  font-size: 1.5rem;
+}
+footer .socials li i {
+  color: white;
+}
+footer .socials li:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+footer .socials li:hover > a > i {
+  color: orange;
 }

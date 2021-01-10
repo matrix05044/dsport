@@ -1,3 +1,4 @@
+@media(max-width: 1624px) {}
 html {
   font-size: 62.5%;
 }
@@ -9,11 +10,20 @@ html body .wrapper .container {
   background-size: cover;
   min-height: 80vh;
   width: 100%;
+  margin: 0 auto;
 }
 html body .wrapper .container header {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem 10%;
+}
+@media(max-width: 1624px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header {
+    padding: 1rem 5% 0;
+  }
 }
 html body .wrapper .container header nav {
   display: flex;
@@ -22,20 +32,41 @@ html body .wrapper .container header nav {
   border-bottom: 1px solid orange;
   padding: 0 1rem 2rem;
 }
+@media(max-width: 768px) {
+  html body .wrapper .container header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 html body .wrapper .container header nav ul {
   list-style-type: none;
+  padding: 0;
 }
 html body .wrapper .container header nav .logo {
   width: 25rem;
   height: 5.5rem;
 }
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .logo {
+    height: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+}
 html body .wrapper .container header nav .logo img {
-  min-width: 100%;
+  width: 100%;
   height: 100%;
 }
 html body .wrapper .container header nav .socials {
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
+  width: 33.33333%;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .socials {
+    width: 50%;
+    justify-content: space-between;
+  }
 }
 html body .wrapper .container header nav .socials li {
   width: 4rem;
@@ -45,24 +76,28 @@ html body .wrapper .container header nav .socials li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 4rem;
   transition: background-color 0.5s, border 0.5s;
 }
 html body .wrapper .container header nav .socials li a {
   font-size: 1.5rem;
 }
-html body .wrapper .container header nav .socials li a:link {
+html body .wrapper .container header nav .socials li i {
   color: black;
 }
 html body .wrapper .container header nav .socials li:hover {
   background-color: orange;
   border: 1px solid orange;
 }
-html body .wrapper .container header nav .socials li:hover > a:link {
+html body .wrapper .container header nav .socials li:hover > a > i {
   color: white;
 }
 html body .wrapper .container header nav .search {
   display: flex;
+}
+@media(max-width: 768px) {
+  html body .wrapper .container header nav .search {
+    padding: 0 20%;
+  }
 }
 html body .wrapper .container header nav .search li {
   margin-right: 4rem;
@@ -71,15 +106,20 @@ html body .wrapper .container header .section-header {
   padding: 5rem 2rem;
 }
 html body .wrapper .container header .section-header h1 {
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 300;
   margin-bottom: 0px;
 }
 html body .wrapper .container header .section-header h1 .dsport {
-  font-size: 22rem;
+  font-size: 20rem;
   font-weight: 900;
   line-height: 0.8;
   display: inline-block;
+}
+@media(max-width: 1023px) {
+  html body .wrapper .container header .section-header h1 .dsport {
+    font-size: inherit;
+  }
 }
 html body .wrapper .container header .section-header h1 .dsport::first-letter {
   color: orange;
@@ -94,6 +134,7 @@ html body .wrapper .container header .section-header .readMore {
   height: 6rem;
   font-size: 2rem;
   transition: color 0.2s, background-color 0.2s;
+  margin-bottom: 4rem;
 }
 html body .wrapper .container header .section-header .readMore:hover {
   color: white;
@@ -108,6 +149,13 @@ html body .wrapper .container header .section-header .readMore i {
   position: absolute;
   left: 20rem;
   z-index: 12;
+}
+@media(max-width: 1023px) {
+  .contact {
+    width: 70%;
+    position: static;
+    margin: 0 auto;
+  }
 }
 .contact h2 {
   font-size: 7rem;
@@ -124,6 +172,11 @@ html body .wrapper .container header .section-header .readMore i {
   display: flex;
   flex-direction: column;
   padding: 8rem 5rem;
+}
+@media(max-width: 1023px) {
+  .contact .form form {
+    width: 100%;
+  }
 }
 .contact .form form input,
 .contact .form form textarea {
@@ -150,6 +203,11 @@ html body .wrapper .container header .section-header .readMore i {
   position: static !important;
   margin-top: 25rem;
 }
+@media(max-width: 1023px) {
+  .mapa .mapouter {
+    margin-top: 5rem;
+  }
+}
 
 footer {
   margin: 10rem 0 0;
@@ -159,6 +217,16 @@ footer {
   height: 7rem;
   align-items: center;
   background-color: orange;
+}
+@media(max-width: 1023px) {
+  footer {
+    padding: 0 5rem;
+  }
+}
+@media(max-width: 768px) {
+  footer {
+    flex-wrap: wrap;
+  }
 }
 footer .socials {
   display: flex;
